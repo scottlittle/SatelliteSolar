@@ -41,7 +41,7 @@ while start < end:
     request_to_do.append(request)
 request_to_do = noaa.request.gvar_img.set(request_to_do, async=True)
 
-save_list = open("list_3.txt", "a")
+save_list = open("list_4.txt", "a")
 url = "http://download.class.ngdc.noaa.gov/download/"
 for req in request_to_do:
     linea = url + req["id"] + "/001\n"
