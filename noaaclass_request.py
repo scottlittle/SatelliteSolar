@@ -7,11 +7,10 @@ interval = timedelta(days=1)
 # The nexts days and hours are in UTC format.
 start = datetime(2014, 4, 1)
 end = datetime(2014, 9, 30)
-#denver before sunrise (4am)
-# 12 - 6 = 6 am
-start_time = timedelta(hours=12, minutes=0, seconds=0)
-#denver past sunset (4 am in england)
-end_time = timedelta(hours=-4, minutes=0, seconds=0)
+#denver before sunrise (5am in denver, 11am in gmt)
+start_time = timedelta(hours=11, minutes=0, seconds=0)
+#denver past sunset (10pm in denver, 4am in gmt)
+end_time = timedelta(hours=4, minutes=0, seconds=0)
 
 username = os.environ['NOAA_USERNAME']
 password = os.environ['NOAA_PASSWORD']
@@ -41,7 +40,7 @@ while start < end:
     request_to_do.append(request)
 request_to_do = noaa.request.gvar_img.set(request_to_do, async=True)
 
-save_list = open("list_4.txt", "a")
+save_list = open("list_5.txt", "a")
 url = "http://download.class.ngdc.noaa.gov/download/"
 for req in request_to_do:
     linea = url + req["id"] + "/001\n"
