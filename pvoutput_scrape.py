@@ -1,4 +1,5 @@
 #script for web scraping pvoutput.org for solar energy usage data
+from datetime import datetime, timedelta
 import pandas as pd
 import numpy as np
 import mechanize
@@ -20,24 +21,37 @@ br.form['login'] = PVOUTPUT_USERNAME #login using saved env vars
 br.form['password'] = PVOUTPUT_PASSWORD #login using saved env vars
 br.submit() #press enter
 #print br.response().read() #see if it worked
-br.open("http://pvoutput.org/intraday.jsp?id=5446&sid=5473&dt=20150702") #open desired page
-html = br.response().read() #read desired page
-df_html = pd.read_html(html)[0]
 
-#cleaning the data
-df_html.columns = pd.MultiIndex.from_arrays(df_html[df_html.index==1].values)
-df_html.drop(df_html.index[[0,1]],inplace=True)
-df_html['Power'] = df_html['Power'].str.replace(',','')
-df_html['Power'] = df_html['Power'].map(lambda x: x.rstrip('W'))
+#getting the actual data from a site
+url = "http://pvoutput.org/intraday.jsp?id=5446&sid=5473&dt="
+list_of_df_htmls = []
+start_time = datetime(2014, 4, 1)
+for i in range(0,3): #iterate over 6 months :for i in range(0,183): 
 
-def make_a_no(x):                  
-    try:
-        return int(x)
-    except:
-        x = 0 
-        return x
-    
-df_html['Power'] = df_html['Power'].map(make_a_no)
-df_html['datetime'] = pd.to_datetime(df_html['Date'] + ' ' + df_html['Time'], unit='h')
-df_html.set_index(['datetime'],inplace=True)
-df_html.head()
+	br.open(url+start_time.strftime('%Y%m%d')) #open desired page
+	html = br.response().read() #read desired page
+	df_html = pd.read_html(html)[0]
+
+	#cleaning the data
+	df_html.columns = pd.MultiIndex.from_arrays(df_html[df_html.index==1].values)
+	df_html.drop(df_html.index[[0,1]],inplace=True)
+	df_html['Power'] = df_html['Power'].str.replace(',','')
+	df_html['Power'] = df_html['Power'].map(lambda x: x.rstrip('W'))
+
+	def make_a_no(x):                  
+	    try:
+	        return int(x)
+	    except:
+	        x = 0 
+	        return x
+	    
+	df_html['Power'] = df_html['Power'].map(make_a_no)
+	df_html['datetime'] = pd.to_datetime(df_html['Date'] + ' ' + df_html['Time'], unit='h')
+	df_html.set_index(['datetime'],inplace=True)
+	list_of_df_htmls.append(df_html)
+	start_time += timedelta(days=1) #update for next day
+	
+with open('pvoutput6months.txt', 'w') as the_file:
+	the_file.write(list_of_df_htmls)
+
+
