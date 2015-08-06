@@ -26,9 +26,9 @@ br.submit() #press enter
 url = "http://pvoutput.org/intraday.jsp?id=5446&sid=5473&dt="
 list_of_df_htmls = []
 start_time = datetime(2014, 4, 1)
-for i in range(0,3): #iterate over 6 months :for i in range(0,183): 
-
-	br.open(url+start_time.strftime('%Y%m%d')) #open desired page
+for i in range(0,183): #iterate over 6 months :for i in range(0,183): 
+	start_str = start_time.strftime('%Y%m%d')
+	br.open(url+start_str) #open desired page
 	html = br.response().read() #read desired page
 	df_html = pd.read_html(html)[0]
 
@@ -48,10 +48,9 @@ for i in range(0,3): #iterate over 6 months :for i in range(0,183):
 	df_html['Power'] = df_html['Power'].map(make_a_no)
 	df_html['datetime'] = pd.to_datetime(df_html['Date'] + ' ' + df_html['Time'], unit='h')
 	df_html.set_index(['datetime'],inplace=True)
-	list_of_df_htmls.append(df_html)
+	df_html.to_csv('data/pvoutput/pvoutput6months/' + start_str + '.csv')
 	start_time += timedelta(days=1) #update for next day
 	
-with open('pvoutput6months.txt', 'w') as the_file:
-	the_file.write(list_of_df_htmls)
+
 
 
