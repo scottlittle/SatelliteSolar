@@ -20,10 +20,9 @@ with open(mypath + my_list_file) as f: #find noaa http files
     begin_urls = f.read().splitlines()
 
 len_begin_urls = len(begin_urls)
-
 for i, begin_url in enumerate(begin_urls):
 
-	print 100.0 * i/len_begin_urls, " percent done"
+	print "------------- ", 100.0 * i/len_begin_urls, " percent done overall---------------"
 
 	df = pd.read_html(mypath + http_files[i],header=0)[0] #read local http file into df
 
@@ -32,8 +31,8 @@ for i, begin_url in enumerate(begin_urls):
 	    filenames.append(df.loc[j, 'Name'])
 
 	for filename in filenames:
-	    req = requests.get(begin_url + '/' + filename)
-	    with open( mypath + 'data/' + filename , 'wb' ) as fout: #save data!
-	        fout.write(req.content)
+		req = requests.get(begin_url + '/' + filename)
+		with open( mypath + 'data/' + filename , 'wb' ) as fout: #save data!
+			fout.write(req.content)
 
 

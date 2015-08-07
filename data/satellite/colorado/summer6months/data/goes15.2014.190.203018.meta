@@ -1,0 +1,914 @@
+<?xml version="1.0" ?>
+<errorMessage datatype_family = "GVAR">
+      <datatype_name>GVAR_IMG</datatype_name>
+      <error>Scan line 2481 should be 17963377</error>
+      <error>Missing line 1 17963373 17963376</error>
+      <error>Scan line 2489 should be 17963385</error>
+      <error>Scan line 2497 should be 17963393</error>
+      <error>Scan line 2505 should be 17963401</error>
+      <error>Scan line 2513 should be 17963409</error>
+      <error>Scan line 2521 should be 17963417</error>
+      <error>Scan line 2529 should be 17963425</error>
+      <error>Bad line 1 17963425 17963425</error>
+      <error>Scan line 2537 should be 17963433</error>
+      <error>Scan line 2545 should be 17963441</error>
+      <error>Scan line 2553 should be 17963449</error>
+      <error>Scan line 2561 should be 17963457</error>
+      <error>Scan line 2569 should be 17963465</error>
+      <error>Bad line 2 17963465 17963472</error>
+      <error>Bad line 3 17963465 17963472</error>
+      <error>Scan line 2577 should be 17963473</error>
+      <error>Scan line 2585 should be 17963481</error>
+      <error>Scan line 2593 should be 17963489</error>
+      <error>Scan line 2601 should be 17963497</error>
+      <error>Bad line 1 17963499 17963499</error>
+      <error>Scan line 2609 should be 17963505</error>
+      <error>Scan line 2617 should be 17963513</error>
+      <error>Scan line 2625 should be 17963521</error>
+      <error>Bad line 1 17963526 17963526</error>
+      <error>Scan line 2633 should be 17963529</error>
+      <error>Bad line 1 17963531 17963531</error>
+      <error>Bad line 1 17963533 17963533</error>
+      <error>Scan line 2641 should be 17963537</error>
+      <error>Scan line 2649 should be 17963545</error>
+      <error>Scan line 2657 should be 17963553</error>
+      <error>Bad line 1 17963554 17963554</error>
+      <error>Bad line 1 17963555 17963555</error>
+      <error>Scan line 2665 should be 17963561</error>
+      <error>Scan line 2673 should be 17963569</error>
+      <error>Bad line 1 17963575 17963575</error>
+      <error>Scan line 2681 should be 17963577</error>
+      <error>Scan line 2689 should be 17963585</error>
+      <error>Bad doc -1 17963593 17963600</error>
+      <error>Bad line 1 17963594 17963594</error>
+      <error>Scan line 2705 should be 17963601</error>
+      <error>Scan line 2713 should be 17963609</error>
+      <error>Scan line 2721 should be 17963617</error>
+      <error>Scan line 2729 should be 17963625</error>
+      <error>Scan line 2737 should be 17963633</error>
+      <error>Bad line 1 17963633 17963633</error>
+      <error>Scan line 2745 should be 17963641</error>
+      <error>Scan line 2753 should be 17963649</error>
+      <error>Bad line 1 17963656 17963656</error>
+      <error>Scan line 2761 should be 17963657</error>
+      <error>Scan line 2769 should be 17963665</error>
+      <error>Bad line 1 17963665 17963665</error>
+      <error>Scan line 2777 should be 17963673</error>
+      <error>Scan line 2785 should be 17963681</error>
+      <error>Scan line 2793 should be 17963689</error>
+      <error>Scan line 2801 should be 17963697</error>
+      <error>Scan line 2809 should be 17963705</error>
+      <error>Scan line 2817 should be 17963713</error>
+      <error>Scan line 2825 should be 17963721</error>
+      <error>Scan line 2833 should be 17963729</error>
+      <error>Scan line 2841 should be 17963737</error>
+      <error>Bad line 1 17963740 17963740</error>
+      <error>Scan line 2849 should be 17963745</error>
+      <error>Scan line 2857 should be 17963753</error>
+      <error>Bad line 1 17963755 17963755</error>
+      <error>Scan line 2865 should be 17963761</error>
+      <error>Scan line 2873 should be 17963769</error>
+      <error>Scan line 2881 should be 17963777</error>
+      <error>Scan line 2889 should be 17963785</error>
+      <error>Scan line 2897 should be 17963793</error>
+      <error>Scan line 2905 should be 17963801</error>
+      <error>Scan line 2913 should be 17963809</error>
+      <error>Scan line 2921 should be 17963817</error>
+      <error>Bad line 1 17963818 17963818</error>
+      <error>Bad line 1 17963819 17963819</error>
+      <error>Scan line 2929 should be 17963825</error>
+      <error>Scan line 2937 should be 17963833</error>
+      <error>Scan line 2945 should be 17963841</error>
+      <error>Bad line 1 17963844 17963844</error>
+      <error>Scan line 2953 should be 17963849</error>
+      <error>Bad line 2 17963849 17963856</error>
+      <error>Bad line 3 17963849 17963856</error>
+      <error>Bad line 1 17963855 17963855</error>
+      <error>Scan line 2961 should be 17963857</error>
+      <error>Scan line 2969 should be 17963865</error>
+      <error>Scan line 2977 should be 17963873</error>
+      <error>Scan line 2985 should be 17963881</error>
+      <error>Scan line 2993 should be 17963889</error>
+      <error>Bad line 1 17963892 17963892</error>
+      <error>Bad line 1 17963893 17963893</error>
+      <error>Scan line 3001 should be 17963897</error>
+      <error>Bad line 2 17963897 17963904</error>
+      <error>Bad line 3 17963897 17963904</error>
+      <error>Bad line 1 17963903 17963903</error>
+      <error>Scan line 3009 should be 17963905</error>
+      <error>Scan line 3017 should be 17963913</error>
+      <error>Scan line 3025 should be 17963921</error>
+      <error>Bad line 1 17963928 17963928</error>
+      <error>Scan line 3033 should be 17963929</error>
+      <error>Bad line 1 17963931 17963931</error>
+      <error>Scan line 3041 should be 17963937</error>
+      <error>Scan line 3049 should be 17963945</error>
+      <error>Scan line 3057 should be 17963953</error>
+      <error>Scan line 3065 should be 17963961</error>
+      <error>Scan line 3073 should be 17963969</error>
+      <error>Bad line 1 17963971 17963971</error>
+      <error>Scan line 3081 should be 17963977</error>
+      <error>Scan line 3089 should be 17963985</error>
+      <error>Scan line 3097 should be 17963993</error>
+      <error>Scan line 3105 should be 17964001</error>
+      <error>Scan line 3113 should be 17964009</error>
+      <error>Bad line 1 17964015 17964015</error>
+      <error>Scan line 3121 should be 17964017</error>
+      <error>Scan line 3129 should be 17964025</error>
+      <error>Scan line 3137 should be 17964033</error>
+      <error>Scan line 3145 should be 17964041</error>
+      <error>Scan line 3153 should be 17964049</error>
+      <error>Scan line 3161 should be 17964057</error>
+      <error>Scan line 3169 should be 17964065</error>
+      <error>Scan line 3177 should be 17964073</error>
+      <error>Scan line 3185 should be 17964081</error>
+      <error>Scan line 3193 should be 17964089</error>
+      <error>Bad line 1 17964093 17964093</error>
+      <error>Scan line 3201 should be 17964097</error>
+      <error>Scan line 3209 should be 17964105</error>
+      <error>Scan line 3217 should be 17964113</error>
+      <error>Scan line 3225 should be 17964121</error>
+      <error>Bad line 1 17964121 17964121</error>
+      <error>Scan line 3233 should be 17964129</error>
+      <error>Scan line 3241 should be 17964137</error>
+      <error>Scan line 3249 should be 17964145</error>
+      <error>Scan line 3257 should be 17964153</error>
+      <error>Scan line 3265 should be 17964161</error>
+      <error>Scan line 3273 should be 17964169</error>
+      <error>Scan line 3281 should be 17964177</error>
+      <error>Scan line 3289 should be 17964185</error>
+      <error>Scan line 3297 should be 17964193</error>
+      <error>Scan line 3305 should be 17964201</error>
+      <error>Scan line 3313 should be 17964209</error>
+      <error>Bad line 2 17964209 17964216</error>
+      <error>Bad line 3 17964209 17964216</error>
+      <error>Bad line 4 17964209 17964216</error>
+      <error>Bad line 6 17964209 17964216</error>
+      <error>Scan line 3321 should be 17964217</error>
+      <error>Scan line 3329 should be 17964225</error>
+      <error>Scan line 3337 should be 17964233</error>
+      <error>Scan line 3345 should be 17964241</error>
+      <error>Bad doc -1 17964249 17964256</error>
+      <error>Scan line 3361 should be 17964257</error>
+      <error>Scan line 3369 should be 17964265</error>
+      <error>Scan line 3377 should be 17964273</error>
+      <error>Scan line 3385 should be 17964281</error>
+      <error>Scan line 3393 should be 17964289</error>
+      <error>Scan line 3401 should be 17964297</error>
+      <error>Scan line 3409 should be 17964305</error>
+      <error>Bad line 1 17964309 17964309</error>
+      <error>Scan line 3417 should be 17964313</error>
+      <error>Bad line 1 17964315 17964315</error>
+      <error>Scan line 3425 should be 17964321</error>
+      <error>Scan line 3433 should be 17964329</error>
+      <error>Scan line 3441 should be 17964337</error>
+      <error>Scan line 3449 should be 17964345</error>
+      <error>Scan line 3457 should be 17964353</error>
+      <error>Bad line 1 17964359 17964359</error>
+      <error>Scan line 3465 should be 17964361</error>
+      <error>Scan line 3473 should be 17964369</error>
+      <error>Scan line 3481 should be 17964377</error>
+      <error>Scan line 3489 should be 17964385</error>
+      <error>Scan line 3497 should be 17964393</error>
+      <error>Scan line 3505 should be 17964401</error>
+      <error>Scan line 3513 should be 17964409</error>
+      <error>Scan line 3521 should be 17964417</error>
+      <error>Scan line 3529 should be 17964425</error>
+      <error>Scan line 3537 should be 17964433</error>
+      <error>Bad doc -1 17964441 17964448</error>
+      <error>Bad doc -1 17964449 17964456</error>
+      <error>Scan line 3561 should be 17964457</error>
+      <error>Scan line 3569 should be 17964465</error>
+      <error>Scan line 3577 should be 17964473</error>
+      <error>Scan line 3585 should be 17964481</error>
+      <error>Scan line 3593 should be 17964489</error>
+      <error>Scan line 3601 should be 17964497</error>
+      <error>Scan line 3609 should be 17964505</error>
+      <error>Scan line 3617 should be 17964513</error>
+      <error>Scan line 3625 should be 17964521</error>
+      <error>Scan line 3633 should be 17964529</error>
+      <error>Scan line 3641 should be 17964537</error>
+      <error>Scan line 3649 should be 17964545</error>
+      <error>Scan line 3657 should be 17964553</error>
+      <error>Scan line 3665 should be 17964561</error>
+      <error>Scan line 3673 should be 17964569</error>
+      <error>Scan line 3681 should be 17964577</error>
+      <error>Bad line 1 17964577 17964577</error>
+      <error>Scan line 3689 should be 17964585</error>
+      <error>Scan line 3697 should be 17964593</error>
+      <error>Bad line 4 17964593 17964600</error>
+      <error>Bad line 6 17964593 17964600</error>
+      <error>Scan line 3705 should be 17964601</error>
+      <error>Scan line 3713 should be 17964609</error>
+      <error>Scan line 3721 should be 17964617</error>
+      <error>Bad line 1 17964618 17964618</error>
+      <error>Bad line 1 17964619 17964619</error>
+      <error>Scan line 3729 should be 17964625</error>
+      <error>Scan line 3737 should be 17964633</error>
+      <error>Bad line 1 17964633 17964633</error>
+      <error>Scan line 3745 should be 17964641</error>
+      <error>Scan line 3753 should be 17964649</error>
+      <error>Scan line 3761 should be 17964657</error>
+      <error>Scan line 3769 should be 17964665</error>
+      <error>Scan line 3777 should be 17964673</error>
+      <error>Scan line 3785 should be 17964681</error>
+      <error>Scan line 3793 should be 17964689</error>
+      <error>Scan line 3801 should be 17964697</error>
+      <error>Scan line 3809 should be 17964705</error>
+      <error>Scan line 3817 should be 17964713</error>
+      <error>Scan line 3825 should be 17964721</error>
+      <error>Scan line 3833 should be 17964729</error>
+      <error>Scan line 3841 should be 17964737</error>
+      <error>Scan line 3849 should be 17964745</error>
+      <error>Scan line 3857 should be 17964753</error>
+      <error>Scan line 3865 should be 17964761</error>
+      <error>Scan line 3873 should be 17964769</error>
+      <error>Bad line 1 17964772 17964772</error>
+      <error>Scan line 3881 should be 17964777</error>
+      <error>Scan line 3889 should be 17964785</error>
+      <error>Scan line 3897 should be 17964793</error>
+      <error>Scan line 3905 should be 17964801</error>
+      <error>Bad line 1 17964803 17964803</error>
+      <error>Bad line 1 17964807 17964807</error>
+      <error>Scan line 3913 should be 17964809</error>
+      <error>Scan line 3921 should be 17964817</error>
+      <error>Scan line 3929 should be 17964825</error>
+      <error>Bad line 1 17964825 17964825</error>
+      <error>Scan line 3937 should be 17964833</error>
+      <error>Scan line 3945 should be 17964841</error>
+      <error>Scan line 3953 should be 17964849</error>
+      <error>Scan line 3961 should be 17964857</error>
+      <error>Bad line 1 17964857 17964857</error>
+      <error>Scan line 3969 should be 17964865</error>
+      <error>Scan line 3977 should be 17964873</error>
+      <error>Scan line 3985 should be 17964881</error>
+      <error>Bad line 2 17964881 17964888</error>
+      <error>Bad line 3 17964881 17964888</error>
+      <error>Scan line 3993 should be 17964889</error>
+      <error>Bad line 4 17964889 17964896</error>
+      <error>Bad line 6 17964889 17964896</error>
+      <error>Scan line 4001 should be 17964897</error>
+      <error>Scan line 4009 should be 17964905</error>
+      <error>Scan line 4017 should be 17964913</error>
+      <error>Scan line 4025 should be 17964921</error>
+      <error>Scan line 4033 should be 17964929</error>
+      <error>Scan line 4041 should be 17964937</error>
+      <error>Scan line 4049 should be 17964945</error>
+      <error>Scan line 4057 should be 17964953</error>
+      <error>Bad line 1 17964954 17964954</error>
+      <error>Scan line 4065 should be 17964961</error>
+      <error>Scan line 4073 should be 17964969</error>
+      <error>Scan line 4081 should be 17964977</error>
+      <error>Scan line 4089 should be 17964985</error>
+      <error>Bad line 1 17964992 17964992</error>
+      <error>Scan line 4097 should be 17964993</error>
+      <error>Bad line 2 17964993 17965000</error>
+      <error>Bad line 3 17964993 17965000</error>
+      <error>Scan line 4105 should be 17965001</error>
+      <error>Scan line 4113 should be 17965009</error>
+      <error>Scan line 4121 should be 17965017</error>
+      <error>Scan line 4129 should be 17965025</error>
+      <error>Scan line 4137 should be 17965033</error>
+      <error>Scan line 4145 should be 17965041</error>
+      <error>Scan line 4153 should be 17965049</error>
+      <error>Scan line 4161 should be 17965057</error>
+      <error>Scan line 4169 should be 17965065</error>
+      <error>Scan line 4177 should be 17965073</error>
+      <error>Scan line 4185 should be 17965081</error>
+      <error>Scan line 4193 should be 17965089</error>
+      <error>Bad line 4 17965089 17965096</error>
+      <error>Bad line 6 17965089 17965096</error>
+      <error>Scan line 4201 should be 17965097</error>
+      <error>Scan line 4209 should be 17965105</error>
+      <error>Scan line 4217 should be 17965113</error>
+      <error>Bad line 1 17965118 17965118</error>
+      <error>Scan line 4225 should be 17965121</error>
+      <error>Scan line 4233 should be 17965129</error>
+      <error>Scan line 4241 should be 17965137</error>
+      <error>Bad line 1 17965138 17965138</error>
+      <error>Scan line 4249 should be 17965145</error>
+      <error>Scan line 4257 should be 17965153</error>
+      <error>Scan line 4265 should be 17965161</error>
+      <error>Scan line 4273 should be 17965169</error>
+      <error>Scan line 4281 should be 17965177</error>
+      <error>Bad line 1 17965182 17965182</error>
+      <error>Scan line 4289 should be 17965185</error>
+      <error>Scan line 4297 should be 17965193</error>
+      <error>Bad line 1 17965198 17965198</error>
+      <error>Scan line 4305 should be 17965201</error>
+      <error>Scan line 4313 should be 17965209</error>
+      <error>Scan line 4321 should be 17965217</error>
+      <error>Scan line 4329 should be 17965225</error>
+      <error>Scan line 4337 should be 17965233</error>
+      <error>Scan line 4345 should be 17965241</error>
+      <error>Scan line 4353 should be 17965249</error>
+      <error>Scan line 4361 should be 17965257</error>
+      <error>Scan line 4369 should be 17965265</error>
+      <error>Scan line 4377 should be 17965273</error>
+      <error>Scan line 4385 should be 17965281</error>
+      <error>Scan line 4393 should be 17965289</error>
+      <error>Scan line 4401 should be 17965297</error>
+      <error>Scan line 4409 should be 17965305</error>
+      <error>Bad line 1 17965310 17965310</error>
+      <error>Scan line 4417 should be 17965313</error>
+      <error>Scan line 4425 should be 17965321</error>
+      <error>Scan line 4433 should be 17965329</error>
+      <error>Scan line 4441 should be 17965337</error>
+      <error>Bad line 1 17965340 17965340</error>
+      <error>Scan line 4449 should be 17965345</error>
+      <error>Bad line 1 17965351 17965351</error>
+      <error>Scan line 4457 should be 17965353</error>
+      <error>Bad line 1 17965358 17965358</error>
+      <error>Bad line 1 17965359 17965359</error>
+      <error>Bad line 1 17965360 17965360</error>
+      <error>Scan line 4465 should be 17965361</error>
+      <error>Scan line 4473 should be 17965369</error>
+      <error>Scan line 4481 should be 17965377</error>
+      <error>Bad line 1 17965381 17965381</error>
+      <error>Scan line 4489 should be 17965385</error>
+      <error>Scan line 4497 should be 17965393</error>
+      <error>Scan line 4505 should be 17965401</error>
+      <error>Bad line 1 17965404 17965404</error>
+      <error>Bad line 1 17965405 17965405</error>
+      <error>Bad line 1 17965406 17965406</error>
+      <error>Scan line 4513 should be 17965409</error>
+      <error>Scan line 4521 should be 17965417</error>
+      <error>Scan line 4529 should be 17965425</error>
+      <error>Bad line 1 17965430 17965430</error>
+      <error>Scan line 4537 should be 17965433</error>
+      <error>Bad line 1 17965434 17965434</error>
+      <error>Scan line 4545 should be 17965441</error>
+      <error>Scan line 4553 should be 17965449</error>
+      <error>Scan line 4561 should be 17965457</error>
+      <error>Scan line 4569 should be 17965465</error>
+      <error>Scan line 4577 should be 17965473</error>
+      <error>Scan line 4585 should be 17965481</error>
+      <error>Scan line 4593 should be 17965489</error>
+      <error>Scan line 4601 should be 17965497</error>
+      <error>Bad line 1 17965497 17965497</error>
+      <error>Bad line 1 17965499 17965499</error>
+      <error>Scan line 4609 should be 17965505</error>
+      <error>Scan line 4617 should be 17965513</error>
+      <error>Scan line 4625 should be 17965521</error>
+      <error>Scan line 4633 should be 17965529</error>
+      <error>Scan line 4641 should be 17965537</error>
+      <error>Bad line 4 17965537 17965544</error>
+      <error>Bad line 6 17965537 17965544</error>
+      <error>Scan line 4649 should be 17965545</error>
+      <error>Scan line 4657 should be 17965553</error>
+      <error>Scan line 4665 should be 17965561</error>
+      <error>Scan line 4673 should be 17965569</error>
+      <error>Bad line 1 17965574 17965574</error>
+      <error>Bad line 1 17965575 17965575</error>
+      <error>Scan line 4681 should be 17965577</error>
+      <error>Scan line 4689 should be 17965585</error>
+      <error>Bad line 2 17965585 17965592</error>
+      <error>Bad line 3 17965585 17965592</error>
+      <error>Scan line 4697 should be 17965593</error>
+      <error>Scan line 4705 should be 17965601</error>
+      <error>Scan line 4713 should be 17965609</error>
+      <error>Scan line 4721 should be 17965617</error>
+      <error>Scan line 4729 should be 17965625</error>
+      <error>Bad line 1 17965632 17965632</error>
+      <error>Scan line 4737 should be 17965633</error>
+      <error>Scan line 4745 should be 17965641</error>
+      <error>Scan line 4753 should be 17965649</error>
+      <error>Scan line 4761 should be 17965657</error>
+      <error>Scan line 4769 should be 17965665</error>
+      <error>Bad line 1 17965670 17965670</error>
+      <error>Scan line 4777 should be 17965673</error>
+      <error>Scan line 4785 should be 17965681</error>
+      <error>Scan line 4793 should be 17965689</error>
+      <error>Scan line 4801 should be 17965697</error>
+      <error>Scan line 4809 should be 17965705</error>
+      <error>Scan line 4817 should be 17965713</error>
+      <error>Scan line 4825 should be 17965721</error>
+      <error>Scan line 4833 should be 17965729</error>
+      <error>Scan line 4841 should be 17965737</error>
+      <error>Scan line 4849 should be 17965745</error>
+      <error>Scan line 4857 should be 17965753</error>
+      <error>Scan line 4865 should be 17965761</error>
+      <error>Scan line 4873 should be 17965769</error>
+      <error>Scan line 4881 should be 17965777</error>
+      <error>Scan line 4889 should be 17965785</error>
+      <error>Scan line 4897 should be 17965793</error>
+      <error>Bad line 1 17965797 17965797</error>
+      <error>Bad line 1 17965799 17965799</error>
+      <error>Scan line 4905 should be 17965801</error>
+      <error>Bad line 1 17965807 17965807</error>
+      <error>Scan line 4913 should be 17965809</error>
+      <error>Scan line 4921 should be 17965817</error>
+      <error>Scan line 4929 should be 17965825</error>
+      <error>Scan line 4937 should be 17965833</error>
+      <error>Scan line 4945 should be 17965841</error>
+      <error>Scan line 4953 should be 17965849</error>
+      <error>Bad line 1 17965849 17965849</error>
+      <error>Bad line 1 17965853 17965853</error>
+      <error>Scan line 4961 should be 17965857</error>
+      <error>Scan line 4969 should be 17965865</error>
+      <error>Scan line 4977 should be 17965873</error>
+      <error>Bad line 4 17965873 17965880</error>
+      <error>Bad line 6 17965873 17965880</error>
+      <error>Scan line 4985 should be 17965881</error>
+      <error>Scan line 4993 should be 17965889</error>
+      <error>Scan line 5001 should be 17965897</error>
+      <error>Bad line 1 17965900 17965900</error>
+      <error>Bad line 1 17965901 17965901</error>
+      <error>Bad line 1 17965904 17965904</error>
+      <error>Scan line 5009 should be 17965905</error>
+      <error>Scan line 5017 should be 17965913</error>
+      <error>Scan line 5025 should be 17965921</error>
+      <error>Scan line 5033 should be 17965929</error>
+      <error>Scan line 5041 should be 17965937</error>
+      <error>Bad line 1 17965942 17965942</error>
+      <error>Bad line 1 17965943 17965943</error>
+      <error>Scan line 5049 should be 17965945</error>
+      <error>Scan line 5057 should be 17965953</error>
+      <error>Bad line 1 17965958 17965958</error>
+      <error>Scan line 5065 should be 17965961</error>
+      <error>Scan line 5073 should be 17965969</error>
+      <error>Scan line 5081 should be 17965977</error>
+      <error>Scan line 5089 should be 17965985</error>
+      <error>Scan line 5097 should be 17965993</error>
+      <error>Scan line 5105 should be 17966001</error>
+      <error>Scan line 5113 should be 17966009</error>
+      <error>Scan line 5121 should be 17966017</error>
+      <error>Scan line 5129 should be 17966025</error>
+      <error>Bad line 1 17966029 17966029</error>
+      <error>Scan line 5137 should be 17966033</error>
+      <error>Bad line 1 17966036 17966036</error>
+      <error>Bad line 1 17966040 17966040</error>
+      <error>Scan line 5145 should be 17966041</error>
+      <error>Scan line 5153 should be 17966049</error>
+      <error>Scan line 5161 should be 17966057</error>
+      <error>Scan line 5169 should be 17966065</error>
+      <error>Scan line 5177 should be 17966073</error>
+      <error>Scan line 5185 should be 17966081</error>
+      <error>Scan line 5193 should be 17966089</error>
+      <error>Bad line 2 17966089 17966096</error>
+      <error>Bad line 3 17966089 17966096</error>
+      <error>Bad line 1 17966092 17966092</error>
+      <error>Scan line 5201 should be 17966097</error>
+      <error>Scan line 5209 should be 17966105</error>
+      <error>Scan line 5217 should be 17966113</error>
+      <error>Scan line 5225 should be 17966121</error>
+      <error>Scan line 5233 should be 17966129</error>
+      <error>Scan line 5241 should be 17966137</error>
+      <error>Scan line 5249 should be 17966145</error>
+      <error>Scan line 5257 should be 17966153</error>
+      <error>Scan line 5265 should be 17966161</error>
+      <error>Scan line 5273 should be 17966169</error>
+      <error>Scan line 5281 should be 17966177</error>
+      <error>Scan line 5289 should be 17966185</error>
+      <error>Scan line 5297 should be 17966193</error>
+      <error>Scan line 5305 should be 17966201</error>
+      <error>Scan line 5313 should be 17966209</error>
+      <error>Scan line 5321 should be 17966217</error>
+      <error>Bad line 1 17966219 17966219</error>
+      <error>Scan line 5329 should be 17966225</error>
+      <error>Scan line 5337 should be 17966233</error>
+      <error>Scan line 5345 should be 17966241</error>
+      <error>Scan line 5353 should be 17966249</error>
+      <error>Scan line 5361 should be 17966257</error>
+      <error>Scan line 5369 should be 17966265</error>
+      <error>Scan line 5377 should be 17966273</error>
+      <error>Scan line 5385 should be 17966281</error>
+      <error>Scan line 5393 should be 17966289</error>
+      <error>Scan line 5401 should be 17966297</error>
+      <error>Scan line 5409 should be 17966305</error>
+      <error>Bad line 1 17966310 17966310</error>
+      <error>Scan line 5417 should be 17966313</error>
+      <error>Scan line 5425 should be 17966321</error>
+      <error>Scan line 5433 should be 17966329</error>
+      <error>Scan line 5441 should be 17966337</error>
+      <error>Bad line 1 17966338 17966338</error>
+      <error>Scan line 5449 should be 17966345</error>
+      <error>Scan line 5457 should be 17966353</error>
+      <error>Scan line 5465 should be 17966361</error>
+      <error>Scan line 5473 should be 17966369</error>
+      <error>Scan line 5481 should be 17966377</error>
+      <error>Bad line 1 17966383 17966383</error>
+      <error>Scan line 5489 should be 17966385</error>
+      <error>Scan line 5497 should be 17966393</error>
+      <error>Scan line 5505 should be 17966401</error>
+      <error>Bad line 2 17966401 17966408</error>
+      <error>Bad line 3 17966401 17966408</error>
+      <error>Bad line 1 17966402 17966402</error>
+      <error>Bad line 1 17966403 17966403</error>
+      <error>Scan line 5513 should be 17966409</error>
+      <error>Scan line 5521 should be 17966417</error>
+      <error>Scan line 5529 should be 17966425</error>
+      <error>Scan line 5537 should be 17966433</error>
+      <error>Scan line 5545 should be 17966441</error>
+      <error>Scan line 5553 should be 17966449</error>
+      <error>Scan line 5561 should be 17966457</error>
+      <error>Scan line 5569 should be 17966465</error>
+      <error>Bad line 1 17966465 17966465</error>
+      <error>Scan line 5577 should be 17966473</error>
+      <error>Scan line 5585 should be 17966481</error>
+      <error>Scan line 5593 should be 17966489</error>
+      <error>Scan line 5601 should be 17966497</error>
+      <error>Scan line 5609 should be 17966505</error>
+      <error>Bad line 4 17966505 17966512</error>
+      <error>Bad line 6 17966505 17966512</error>
+      <error>Bad line 1 17966507 17966507</error>
+      <error>Scan line 5617 should be 17966513</error>
+      <error>Scan line 5625 should be 17966521</error>
+      <error>Scan line 5633 should be 17966529</error>
+      <error>Scan line 5641 should be 17966537</error>
+      <error>Scan line 5649 should be 17966545</error>
+      <error>Scan line 5657 should be 17966553</error>
+      <error>Scan line 5665 should be 17966561</error>
+      <error>Bad line 1 17966566 17966566</error>
+      <error>Scan line 5673 should be 17966569</error>
+      <error>Bad line 1 17966574 17966574</error>
+      <error>Scan line 5681 should be 17966577</error>
+      <error>Scan line 5689 should be 17966585</error>
+      <error>Scan line 5697 should be 17966593</error>
+      <error>Scan line 5705 should be 17966601</error>
+      <error>Scan line 5713 should be 17966609</error>
+      <error>Scan line 5721 should be 17966617</error>
+      <error>Scan line 5729 should be 17966625</error>
+      <error>Scan line 5737 should be 17966633</error>
+      <error>Scan line 5745 should be 17966641</error>
+      <error>Scan line 5753 should be 17966649</error>
+      <error>Bad line 1 17966655 17966655</error>
+      <error>Scan line 5761 should be 17966657</error>
+      <error>Scan line 5769 should be 17966665</error>
+      <error>Scan line 5777 should be 17966673</error>
+      <error>Scan line 5785 should be 17966681</error>
+      <error>Scan line 5793 should be 17966689</error>
+      <error>Scan line 5801 should be 17966697</error>
+      <error>Scan line 5809 should be 17966705</error>
+      <error>Scan line 5817 should be 17966713</error>
+      <error>Scan line 5825 should be 17966721</error>
+      <error>Scan line 5833 should be 17966729</error>
+      <error>Scan line 5841 should be 17966737</error>
+      <error>Scan line 5849 should be 17966745</error>
+      <error>Bad line 4 17966745 17966752</error>
+      <error>Bad line 6 17966745 17966752</error>
+      <error>Scan line 5857 should be 17966753</error>
+      <error>Scan line 5865 should be 17966761</error>
+      <error>Scan line 5873 should be 17966769</error>
+      <error>Scan line 5881 should be 17966777</error>
+      <error>Bad line 2 17966777 17966784</error>
+      <error>Bad line 3 17966777 17966784</error>
+      <error>Scan line 5889 should be 17966785</error>
+      <error>Scan line 5897 should be 17966793</error>
+      <error>Scan line 5905 should be 17966801</error>
+      <error>Scan line 5913 should be 17966809</error>
+      <error>Scan line 5921 should be 17966817</error>
+      <error>Scan line 5929 should be 17966825</error>
+      <error>Bad doc -1 17966833 17966840</error>
+      <error>Scan line 5945 should be 17966841</error>
+      <error>Scan line 5953 should be 17966849</error>
+      <error>Scan line 5961 should be 17966857</error>
+      <error>Bad line 1 17966863 17966863</error>
+      <error>Scan line 5969 should be 17966865</error>
+      <error>Bad line 2 17966865 17966872</error>
+      <error>Bad line 3 17966865 17966872</error>
+      <error>Scan line 5977 should be 17966873</error>
+      <error>Scan line 5985 should be 17966881</error>
+      <error>Scan line 5993 should be 17966889</error>
+      <error>Scan line 6001 should be 17966897</error>
+      <error>Scan line 6009 should be 17966905</error>
+      <error>Scan line 6017 should be 17966913</error>
+      <error>Scan line 6025 should be 17966921</error>
+      <error>Scan line 6033 should be 17966929</error>
+      <error>Scan line 6041 should be 17966937</error>
+      <error>Scan line 6049 should be 17966945</error>
+      <error>Scan line 6057 should be 17966953</error>
+      <error>Scan line 6065 should be 17966961</error>
+      <error>Scan line 6073 should be 17966969</error>
+      <error>Scan line 6081 should be 17966977</error>
+      <error>Bad line 1 17966979 17966979</error>
+      <error>Scan line 6089 should be 17966985</error>
+      <error>Scan line 6097 should be 17966993</error>
+      <error>Scan line 6105 should be 17967001</error>
+      <error>Scan line 6113 should be 17967009</error>
+      <error>Scan line 6121 should be 17967017</error>
+      <error>Scan line 6129 should be 17967025</error>
+      <error>Scan line 6137 should be 17967033</error>
+      <error>Scan line 6145 should be 17967041</error>
+      <error>Bad line 1 17967047 17967047</error>
+      <error>Bad doc -1 17967049 17967056</error>
+      <error>Bad line 2 17967049 17967056</error>
+      <error>Bad line 3 17967049 17967056</error>
+      <error>Scan line 6161 should be 17967057</error>
+      <error>Scan line 6169 should be 17967065</error>
+      <error>Scan line 6177 should be 17967073</error>
+      <error>Scan line 6185 should be 17967081</error>
+      <error>Scan line 6193 should be 17967089</error>
+      <error>Bad line 1 17967091 17967091</error>
+      <error>Scan line 6201 should be 17967097</error>
+      <error>Scan line 6209 should be 17967105</error>
+      <error>Scan line 6217 should be 17967113</error>
+      <error>Scan line 6225 should be 17967121</error>
+      <error>Scan line 6233 should be 17967129</error>
+      <error>Scan line 6241 should be 17967137</error>
+      <error>Scan line 6249 should be 17967145</error>
+      <error>Scan line 6257 should be 17967153</error>
+      <error>Scan line 6265 should be 17967161</error>
+      <error>Bad line 1 17967161 17967161</error>
+      <error>Bad line 1 17967162 17967162</error>
+      <error>Bad line 1 17967163 17967163</error>
+      <error>Bad line 1 17967164 17967164</error>
+      <error>Bad line 1 17967166 17967166</error>
+      <error>Scan line 6273 should be 17967169</error>
+      <error>Scan line 6281 should be 17967177</error>
+      <error>Scan line 6289 should be 17967185</error>
+      <error>Scan line 6297 should be 17967193</error>
+      <error>Scan line 6305 should be 17967201</error>
+      <error>Bad line 1 17967207 17967207</error>
+      <error>Scan line 6313 should be 17967209</error>
+      <error>Scan line 6321 should be 17967217</error>
+      <error>Scan line 6329 should be 17967225</error>
+      <error>Scan line 6337 should be 17967233</error>
+      <error>Scan line 6345 should be 17967241</error>
+      <error>Scan line 6353 should be 17967249</error>
+      <error>Scan line 6361 should be 17967257</error>
+      <error>Bad line 1 17967259 17967259</error>
+      <error>Scan line 6369 should be 17967265</error>
+      <error>Scan line 6377 should be 17967273</error>
+      <error>Scan line 6385 should be 17967281</error>
+      <error>Scan line 6393 should be 17967289</error>
+      <error>Bad line 1 17967289 17967289</error>
+      <error>Bad line 1 17967293 17967293</error>
+      <error>Scan line 6401 should be 17967297</error>
+      <error>Scan line 6409 should be 17967305</error>
+      <error>Scan line 6417 should be 17967313</error>
+      <error>Bad line 1 17967316 17967316</error>
+      <error>Scan line 6425 should be 17967321</error>
+      <error>Scan line 6433 should be 17967329</error>
+      <error>Bad line 4 17967329 17967336</error>
+      <error>Bad line 6 17967329 17967336</error>
+      <error>Bad line 1 17967332 17967332</error>
+      <error>Scan line 6441 should be 17967337</error>
+      <error>Scan line 6449 should be 17967345</error>
+      <error>Scan line 6457 should be 17967353</error>
+      <error>Scan line 6465 should be 17967361</error>
+      <error>Scan line 6473 should be 17967369</error>
+      <error>Scan line 6481 should be 17967377</error>
+      <error>Bad line 1 17967382 17967382</error>
+      <error>Scan line 6489 should be 17967385</error>
+      <error>Scan line 6497 should be 17967393</error>
+      <error>Bad line 1 17967394 17967394</error>
+      <error>Bad line 1 17967397 17967397</error>
+      <error>Scan line 6505 should be 17967401</error>
+      <error>Scan line 6513 should be 17967409</error>
+      <error>Bad line 2 17967409 17967416</error>
+      <error>Bad line 3 17967409 17967416</error>
+      <error>Scan line 6521 should be 17967417</error>
+      <error>Scan line 6529 should be 17967425</error>
+      <error>Scan line 6537 should be 17967433</error>
+      <error>Bad line 4 17967433 17967440</error>
+      <error>Bad line 6 17967433 17967440</error>
+      <error>Scan line 6545 should be 17967441</error>
+      <error>Scan line 6553 should be 17967449</error>
+      <error>Scan line 6561 should be 17967457</error>
+      <error>Scan line 6569 should be 17967465</error>
+      <error>Scan line 6577 should be 17967473</error>
+      <error>Scan line 6585 should be 17967481</error>
+      <error>Scan line 6593 should be 17967489</error>
+      <error>Scan line 6601 should be 17967497</error>
+      <error>Scan line 6609 should be 17967505</error>
+      <error>Bad line 4 17967505 17967512</error>
+      <error>Bad line 6 17967505 17967512</error>
+      <error>Scan line 6617 should be 17967513</error>
+      <error>Bad line 4 17967513 17967520</error>
+      <error>Bad line 6 17967513 17967520</error>
+      <error>Bad line 1 17967516 17967516</error>
+      <error>Bad line 1 17967517 17967517</error>
+      <error>Scan line 6625 should be 17967521</error>
+      <error>Scan line 6633 should be 17967529</error>
+      <error>Bad line 1 17967529 17967529</error>
+      <error>Bad line 1 17967531 17967531</error>
+      <error>Scan line 6641 should be 17967537</error>
+      <error>Scan line 6649 should be 17967545</error>
+      <error>Bad line 1 17967551 17967551</error>
+      <error>Scan line 6657 should be 17967553</error>
+      <error>Scan line 6665 should be 17967561</error>
+      <error>Scan line 6673 should be 17967569</error>
+      <error>Scan line 6681 should be 17967577</error>
+      <error>Scan line 6689 should be 17967585</error>
+      <error>Scan line 6697 should be 17967593</error>
+      <error>Bad line 1 17967596 17967596</error>
+      <error>Scan line 6705 should be 17967601</error>
+      <error>Scan line 6713 should be 17967609</error>
+      <error>Scan line 6721 should be 17967617</error>
+      <error>Scan line 6729 should be 17967625</error>
+      <error>Scan line 6737 should be 17967633</error>
+      <error>Scan line 6745 should be 17967641</error>
+      <error>Scan line 6753 should be 17967649</error>
+      <error>Scan line 6761 should be 17967657</error>
+      <error>Scan line 6769 should be 17967665</error>
+      <error>Bad line 1 17967668 17967668</error>
+      <error>Bad line 1 17967669 17967669</error>
+      <error>Scan line 6777 should be 17967673</error>
+      <error>Scan line 6785 should be 17967681</error>
+      <error>Bad line 1 17967683 17967683</error>
+      <error>Scan line 6793 should be 17967689</error>
+      <error>Scan line 6801 should be 17967697</error>
+      <error>Scan line 6809 should be 17967705</error>
+      <error>Scan line 6817 should be 17967713</error>
+      <error>Scan line 6825 should be 17967721</error>
+      <error>Scan line 6833 should be 17967729</error>
+      <error>Bad line 4 17967729 17967736</error>
+      <error>Bad line 6 17967729 17967736</error>
+      <error>Bad line 1 17967729 17967729</error>
+      <error>Bad line 1 17967734 17967734</error>
+      <error>Scan line 6841 should be 17967737</error>
+      <error>Scan line 6849 should be 17967745</error>
+      <error>Scan line 6857 should be 17967753</error>
+      <error>Scan line 6865 should be 17967761</error>
+      <error>Bad line 4 17967761 17967768</error>
+      <error>Bad line 6 17967761 17967768</error>
+      <error>Scan line 6873 should be 17967769</error>
+      <error>Scan line 6881 should be 17967777</error>
+      <error>Scan line 6889 should be 17967785</error>
+      <error>Scan line 6897 should be 17967793</error>
+      <error>Scan line 6905 should be 17967801</error>
+      <error>Scan line 6913 should be 17967809</error>
+      <error>Bad doc -1 17967817 17967824</error>
+      <error>Bad line 1 17967818 17967818</error>
+      <error>Bad doc -1 17967825 17967832</error>
+      <error>Scan line 6937 should be 17967833</error>
+      <error>Scan line 6945 should be 17967841</error>
+      <error>Scan line 6953 should be 17967849</error>
+      <error>Scan line 6961 should be 17967857</error>
+      <error>Scan line 6969 should be 17967865</error>
+      <error>Bad line 1 17967865 17967865</error>
+      <error>Scan line 6977 should be 17967873</error>
+      <error>Scan line 6985 should be 17967881</error>
+      <error>Scan line 6993 should be 17967889</error>
+      <error>Scan line 7001 should be 17967897</error>
+      <error>Bad line 4 17967897 17967904</error>
+      <error>Bad line 6 17967897 17967904</error>
+      <error>Bad line 1 17967900 17967900</error>
+      <error>Scan line 7009 should be 17967905</error>
+      <error>Bad line 1 17967912 17967912</error>
+      <error>Scan line 7017 should be 17967913</error>
+      <error>Scan line 7025 should be 17967921</error>
+      <error>Scan line 7033 should be 17967929</error>
+      <error>Scan line 7041 should be 17967937</error>
+      <error>Scan line 7049 should be 17967945</error>
+      <error>Bad line 1 17967946 17967946</error>
+      <error>Scan line 7057 should be 17967953</error>
+      <error>Scan line 7065 should be 17967961</error>
+      <error>Scan line 7073 should be 17967969</error>
+      <error>Scan line 7081 should be 17967977</error>
+      <error>Scan line 7089 should be 17967985</error>
+      <error>Scan line 7097 should be 17967993</error>
+      <error>Scan line 7105 should be 17968001</error>
+      <error>Bad line 1 17968007 17968007</error>
+      <error>Scan line 7113 should be 17968009</error>
+      <error>Bad line 1 17968013 17968013</error>
+      <error>Scan line 7121 should be 17968017</error>
+      <error>Scan line 7129 should be 17968025</error>
+      <error>Scan line 7137 should be 17968033</error>
+      <error>Bad line 1 17968039 17968039</error>
+      <error>Scan line 7145 should be 17968041</error>
+      <error>Scan line 7153 should be 17968049</error>
+      <error>Scan line 7161 should be 17968057</error>
+      <error>Scan line 7169 should be 17968065</error>
+      <error>Scan line 7177 should be 17968073</error>
+      <error>Scan line 7185 should be 17968081</error>
+      <error>Scan line 7193 should be 17968089</error>
+      <error>Scan line 7201 should be 17968097</error>
+      <error>Scan line 7209 should be 17968105</error>
+      <error>Bad line 4 17968105 17968112</error>
+      <error>Bad line 6 17968105 17968112</error>
+      <error>Bad line 1 17968107 17968107</error>
+      <error>Bad line 1 17968108 17968108</error>
+      <error>Bad line 1 17968109 17968109</error>
+      <error>Bad line 1 17968110 17968110</error>
+      <error>Scan line 7217 should be 17968113</error>
+      <error>Bad line 1 17968116 17968116</error>
+      <error>Scan line 7225 should be 17968121</error>
+      <error>Scan line 7233 should be 17968129</error>
+      <error>Scan line 7241 should be 17968137</error>
+      <error>Bad line 1 17968139 17968139</error>
+      <error>Bad line 1 17968141 17968141</error>
+      <error>Scan line 7249 should be 17968145</error>
+      <error>Scan line 7257 should be 17968153</error>
+      <error>Scan line 7265 should be 17968161</error>
+      <error>Scan line 7273 should be 17968169</error>
+      <error>Scan line 7281 should be 17968177</error>
+      <error>Bad line 2 17968177 17968184</error>
+      <error>Bad line 3 17968177 17968184</error>
+      <error>Scan line 7289 should be 17968185</error>
+      <error>Scan line 7297 should be 17968193</error>
+      <error>Scan line 7305 should be 17968201</error>
+      <error>Scan line 7313 should be 17968209</error>
+      <error>Scan line 7321 should be 17968217</error>
+      <error>Scan line 7329 should be 17968225</error>
+      <error>Scan line 7337 should be 17968233</error>
+      <error>Scan line 7345 should be 17968241</error>
+      <error>Scan line 7353 should be 17968249</error>
+      <error>Scan line 7361 should be 17968257</error>
+      <error>Bad line 1 17968259 17968259</error>
+      <error>Scan line 7369 should be 17968265</error>
+      <error>Scan line 7377 should be 17968273</error>
+      <error>Bad line 1 17968280 17968280</error>
+      <error>Scan line 7385 should be 17968281</error>
+      <error>Bad line 4 17968281 17968288</error>
+      <error>Bad line 6 17968281 17968288</error>
+      <error>Scan line 7393 should be 17968289</error>
+      <error>Scan line 7401 should be 17968297</error>
+      <error>Bad line 1 17968303 17968303</error>
+      <error>Scan line 7409 should be 17968305</error>
+      <error>Bad line 4 17968305 17968312</error>
+      <error>Bad line 6 17968305 17968312</error>
+      <error>Scan line 7417 should be 17968313</error>
+      <error>Scan line 7425 should be 17968321</error>
+      <error>Scan line 7433 should be 17968329</error>
+      <error>Scan line 7441 should be 17968337</error>
+      <error>Scan line 7449 should be 17968345</error>
+      <error>Scan line 7457 should be 17968353</error>
+      <error>Scan line 7465 should be 17968361</error>
+      <error>Bad line 1 17968365 17968365</error>
+      <error>Scan line 7473 should be 17968369</error>
+      <error>Bad line 1 17968369 17968369</error>
+      <error>Bad line 1 17968373 17968373</error>
+      <error>Scan line 7481 should be 17968377</error>
+      <error>Scan line 7489 should be 17968385</error>
+      <error>Scan line 7497 should be 17968393</error>
+      <error>Scan line 7505 should be 17968401</error>
+      <error>Scan line 7513 should be 17968409</error>
+      <error>Bad line 1 17968411 17968411</error>
+      <error>Scan line 7521 should be 17968417</error>
+      <error>Scan line 7529 should be 17968425</error>
+      <error>Scan line 7537 should be 17968433</error>
+      <error>Bad line 1 17968433 17968433</error>
+      <error>Bad line 1 17968439 17968439</error>
+      <error>Scan line 7545 should be 17968441</error>
+      <error>Scan line 7553 should be 17968449</error>
+      <error>Bad line 4 17968449 17968456</error>
+      <error>Bad line 6 17968449 17968456</error>
+      <error>Scan line 7561 should be 17968457</error>
+      <error>Bad line 1 17968461 17968461</error>
+      <error>Scan line 7569 should be 17968465</error>
+      <error>Scan line 7577 should be 17968473</error>
+      <error>Scan line 7585 should be 17968481</error>
+      <error>Scan line 7593 should be 17968489</error>
+      <error>Scan line 7601 should be 17968497</error>
+      <error>Scan line 7609 should be 17968505</error>
+      <error>Scan line 7617 should be 17968513</error>
+      <error>Scan line 7625 should be 17968521</error>
+      <error>Bad line 1 17968527 17968527</error>
+      <error>Bad line 1 17968528 17968528</error>
+      <error>Scan line 7633 should be 17968529</error>
+      <error>Scan line 7641 should be 17968537</error>
+      <error>Scan line 7649 should be 17968545</error>
+      <error>Bad line 2 17968545 17968552</error>
+      <error>Bad line 3 17968545 17968552</error>
+      <error>Scan line 7657 should be 17968553</error>
+      <error>Scan line 7665 should be 17968561</error>
+      <error>Scan line 7673 should be 17968569</error>
+      <error>Scan line 7681 should be 17968577</error>
+      <error>Scan line 7689 should be 17968585</error>
+      <error>Bad line 4 17968585 17968592</error>
+      <error>Bad line 6 17968585 17968592</error>
+      <error>Scan line 7697 should be 17968593</error>
+      <error>Scan line 7705 should be 17968601</error>
+      <error>Bad line 1 17968602 17968602</error>
+      <error>Scan line 7713 should be 17968609</error>
+      <error>Scan line 7721 should be 17968617</error>
+      <error>Scan line 7729 should be 17968625</error>
+      <error>Bad line 2 17968625 17968632</error>
+      <error>Bad line 3 17968625 17968632</error>
+      <error>Scan line 7737 should be 17968633</error>
+      <error>Scan line 7745 should be 17968641</error>
+      <error>Scan line 7753 should be 17968649</error>
+      <error>Scan line 7761 should be 17968657</error>
+      <error>Scan line 7769 should be 17968665</error>
+      <error>Scan line 7777 should be 17968673</error>
+      <error>Scan line 7785 should be 17968681</error>
+      <error>Bad line 1 17968681 17968681</error>
+      <error>Bad line 1 17968682 17968682</error>
+      <error>Bad line 1 17968683 17968683</error>
+      <error>Bad line 1 17968684 17968684</error>
+      <error>Scan line 7793 should be 17968689</error>
+      <error>Scan line 7801 should be 17968697</error>
+      <error>Scan line 7809 should be 17968705</error>
+      <error>Bad doc -1 17968713 17968720</error>
+      <error>Bad line 2 17968713 17968720</error>
+      <error>Bad line 3 17968713 17968720</error>
+      <error>Scan line 7825 should be 17968721</error>
+      <error>Bad line 2 17968721 17968728</error>
+      <error>Bad line 3 17968721 17968728</error>
+      <error>Scan line 7833 should be 17968729</error>
+      <error>Scan line 7841 should be 17968737</error>
+      <error>Scan line 7849 should be 17968745</error>
+      <error>Bad line 4 17968745 17968752</error>
+      <error>Bad line 6 17968745 17968752</error>
+      <error>Scan line 7857 should be 17968753</error>
+      <error>Scan line 7865 should be 17968761</error>
+      <error>Bad line 1 17968761 17968761</error>
+      <error>Bad line 1 17968762 17968762</error>
+      <error>Bad line 1 17968765 17968765</error>
+      <error>Scan line 7873 should be 17968769</error>
+      <error>Scan line 7881 should be 17968777</error>
+      <error>Scan line 7889 should be 17968785</error>
+      <error>Scan line 7897 should be 17968793</error>
+</errorMessage>
