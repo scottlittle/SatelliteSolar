@@ -3,6 +3,9 @@ from netCDF4 import Dataset
 from mpl_toolkits.basemap import Basemap  #map stuff
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+import glob
+from datetime import datetime, timedelta
 get_ipython().magic(u'matplotlib inline')
 
 
@@ -40,7 +43,7 @@ def plot_satellite_image(filename):
 	plt.show()
 
 def return_satellite_data(filename):
-	''' Input:  datetime, channel
+	''' Input:  filename
 		Output: lons, lats, data'''
 	rootgrp = Dataset(filename, "a", format="NETCDF4") #generic name for data
 	lons = rootgrp.variables['lon'][:] #extract lons ...
@@ -48,4 +51,76 @@ def return_satellite_data(filename):
 	data = rootgrp.variables['data'][:] #...and data from netCDF file
 	rootgrp.close() #need to close before you can open again
 	return (lons, lats, np.squeeze(data))
+
+def find_satellite_data(filename):
+	''' Finds closest data within 3 hour time period
+		Input:  datetime, channel
+		Output: lons, lats, data'''
+	rootgrp = Dataset(filename, "a", format="NETCDF4") #generic name for data
+	lons = rootgrp.variables['lon'][:] #extract lons ...
+	lats = rootgrp.variables['lat'][:] #...lats...
+	data = rootgrp.variables['data'][:] #...and data from netCDF file
+	rootgrp.close() #need to close before you can open again
+	return (lons, lats, np.squeeze(data))
+
+def find_file_details(filefolder):
+    '''Takes in a filefolder with satellite data and returns list of files,
+        list of file details, list of dates, and list of channels
+        Example usage:  filefolder = "data/satellite/colorado/summer6months/data"
+						list_of_files, list_of_files_details, \
+						list_of_dates, list_of_channels = find_file_details(filefolder)'''
+
+    data_files = os.listdir(filefolder)
+
+    list_of_files = [] #contains all the files
+    list_of_files_details = [] #contains information collected from filename
+    for myfile in data_files:
+        if myfile[-2:] == 'nc': #only get netCDF
+            list_of_files.append(myfile)
+            list_of_files_details.append(myfile.split('.'))
+
+    list_of_dates = [] #contains datetime data for files
+    list_of_channels = [] #contains channel data
+    for i,_ in enumerate(list_of_files_details):
+        mytime = list_of_files_details[i][1]+" "+list_of_files_details[i][2]+" "+list_of_files_details[i][3]
+        mydatetime = datetime.strptime(mytime, '%Y %j %H%M%S')
+        list_of_dates.append(mydatetime)
+        list_of_channels.append(list_of_files_details[i][4])
+    return (list_of_files, list_of_files_details, list_of_dates, list_of_channels)
+
+def find_closest_date(desired_datetime, filefolder):
+	'''Input: desired datetime, Output: datetime of closest file(s)
+	Example usage:   desired_datetime = datetime(2014, 5, 5, 19)
+	closest_datetime = find_closest_date(desired_datetime)'''
+	list_of_files, list_of_files_details, \
+	list_of_dates, list_of_channels = find_file_details(filefolder)
+	time_differences = []
+	for i,time in enumerate(list_of_dates):
+		time_difference = list_of_dates[i] - desired_datetime
+		time_differences.append(abs(time_difference).total_seconds())
+
+	if min(time_differences) < 10800: #return datetime only if < 3 hours
+		return list_of_dates[np.argmin(time_differences)]
+	else:
+		print "No file with this datetime within 3 hours!"
+
+def find_desired_file(desired_datetime, desired_channel, filefolder):
+	'''return filename with desired features
+	Example usage:  desired_channel = 'BAND_01'
+	desired_datetime = datetime(2014, 4, 2, 12)
+	print find_desired_file(desired_datetime, desired_channel)'''
+	list_of_files, list_of_files_details, \
+	list_of_dates, list_of_channels = find_file_details(filefolder)
+	closest_datetime = find_closest_date(desired_datetime, filefolder)
+	list_of_channel_matches = []
+	for i,channel in enumerate(list_of_channels):
+		if channel == desired_channel:
+			list_of_channel_matches.append(i)
+
+	list_of_date_matches = []
+	for i,date in enumerate(list_of_dates):
+		if date == closest_datetime:
+			list_of_date_matches.append(i)
+	#returns interested file (should just be one)
+	return list_of_files[list(set(list_of_channel_matches) & set(list_of_date_matches))[0]]
 
