@@ -8,7 +8,6 @@ import glob
 from datetime import datetime, timedelta
 get_ipython().magic(u'matplotlib inline')
 
-
 def plot_satellite_image(filename):
 	'''takes in a file and outputs a plot of satellite'''
 	rootgrp = Dataset(filename, "a", format="NETCDF4")
@@ -52,18 +51,18 @@ def return_satellite_data(filename):
 	rootgrp.close() #need to close before you can open again
 	return (lons, lats, np.squeeze(data))
 
-def find_satellite_data(filename):
-	''' Finds closest data within 3 hour time period
-		Input:  datetime, channel
-		Output: lons, lats, data'''
-	rootgrp = Dataset(filename, "a", format="NETCDF4") #generic name for data
-	lons = rootgrp.variables['lon'][:] #extract lons ...
-	lats = rootgrp.variables['lat'][:] #...lats...
-	data = rootgrp.variables['data'][:] #...and data from netCDF file
-	rootgrp.close() #need to close before you can open again
-	return (lons, lats, np.squeeze(data))
+# def find_satellite_data(filename):
+# 	''' Finds closest data within 3 hour time period
+# 		Input:  datetime, channel
+# 		Output: lons, lats, data'''
+# 	rootgrp = Dataset(filename, "a", format="NETCDF4") #generic name for data
+# 	lons = rootgrp.variables['lon'][:] #extract lons ...
+# 	lats = rootgrp.variables['lat'][:] #...lats...
+# 	data = rootgrp.variables['data'][:] #...and data from netCDF file
+# 	rootgrp.close() #need to close before you can open again
+# 	return (lons, lats, np.squeeze(data))
 
-def find_file_details(filefolder):
+def find_file_details(filefolder, filetype = 'nc'): #match 2 or 3 letters
     '''Takes in a filefolder with satellite data and returns list of files,
         list of file details, list of dates, and list of channels
         Example usage:  filefolder = "data/satellite/colorado/summer6months/data"
@@ -75,7 +74,7 @@ def find_file_details(filefolder):
     list_of_files = [] #contains all the files
     list_of_files_details = [] #contains information collected from filename
     for myfile in data_files:
-        if myfile[-2:] == 'nc': #only get netCDF
+        if (myfile[-2:] == filetype or myfile[-3:] == filetype): #only get netCDF by default
             list_of_files.append(myfile)
             list_of_files_details.append(myfile.split('.'))
 
@@ -123,4 +122,13 @@ def find_desired_file(desired_datetime, desired_channel, filefolder):
 			list_of_date_matches.append(i)
 	#returns interested file (should just be one)
 	return list_of_files[list(set(list_of_channel_matches) & set(list_of_date_matches))[0]]
+
+
+##################################################################
+# Above are functions for satellite data.  Below are functions for sensor
+# and PV Output data
+##################################################################
+
+
+
 
