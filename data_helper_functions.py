@@ -6,19 +6,16 @@ import matplotlib.pyplot as plt
 import os
 import glob
 from datetime import datetime, timedelta
+import pandas as pd
 get_ipython().magic(u'matplotlib inline')
+
+###########
+# Below are helper functions for the satellite
+###########
 
 def plot_satellite_image(filename):
 	'''takes in a file and outputs a plot of satellite'''
 	rootgrp = Dataset(filename, "a", format="NETCDF4")
-
-	# print "type of data: ", rootgrp.data_model #netcdf3_classic, not netcdf4
-	# myvars = []
-	# for var in rootgrp.variables: #list of variables
-	#     myvars.append(var)
-	# print "variables in data: ", myvars
-	# print "latitude of one point; ", rootgrp.variables['lat'][0][0] #verify that one latitude is where we expect
-
 	lons = rootgrp.variables['lon'][:]
 	lats = rootgrp.variables['lat'][:]
 	data = rootgrp.variables['data'][:]
@@ -41,26 +38,15 @@ def plot_satellite_image(filename):
 	plt.title('GOES 15 - Sensor 1') # Add Title
 	plt.show()
 
-def return_satellite_data(filename):
+def return_satellite_data(filename, filefolder):
 	''' Input:  filename
 		Output: lons, lats, data'''
-	rootgrp = Dataset(filename, "a", format="NETCDF4") #generic name for data
+	rootgrp = Dataset(filefolder + filename, "a", format="NETCDF4") #generic name for data
 	lons = rootgrp.variables['lon'][:] #extract lons ...
 	lats = rootgrp.variables['lat'][:] #...lats...
 	data = rootgrp.variables['data'][:] #...and data from netCDF file
 	rootgrp.close() #need to close before you can open again
 	return (lons, lats, np.squeeze(data))
-
-# def find_satellite_data(filename):
-# 	''' Finds closest data within 3 hour time period
-# 		Input:  datetime, channel
-# 		Output: lons, lats, data'''
-# 	rootgrp = Dataset(filename, "a", format="NETCDF4") #generic name for data
-# 	lons = rootgrp.variables['lon'][:] #extract lons ...
-# 	lats = rootgrp.variables['lat'][:] #...lats...
-# 	data = rootgrp.variables['data'][:] #...and data from netCDF file
-# 	rootgrp.close() #need to close before you can open again
-# 	return (lons, lats, np.squeeze(data))
 
 def find_file_details(filefolder, filetype = 'nc'): #match 2 or 3 letters
     '''Takes in a filefolder with satellite data and returns list of files,
@@ -69,7 +55,7 @@ def find_file_details(filefolder, filetype = 'nc'): #match 2 or 3 letters
 						list_of_files, list_of_files_details, \
 						list_of_dates, list_of_channels = find_file_details(filefolder)'''
 
-    data_files = os.listdir(filefolder)
+    data_files = os.listdir(filefolder) #list files in directory
 
     list_of_files = [] #contains all the files
     list_of_files_details = [] #contains information collected from filename
@@ -103,11 +89,11 @@ def find_closest_date(desired_datetime, filefolder):
 	else:
 		print "No file with this datetime within 3 hours!"
 
-def find_desired_file(desired_datetime, desired_channel, filefolder):
+def find_filename(desired_datetime, desired_channel, filefolder):
 	'''return filename with desired features
 	Example usage:  desired_channel = 'BAND_01'
 	desired_datetime = datetime(2014, 4, 2, 12)
-	print find_desired_file(desired_datetime, desired_channel)'''
+	print find_filename(desired_datetime, desired_channel)'''
 	list_of_files, list_of_files_details, \
 	list_of_dates, list_of_channels = find_file_details(filefolder)
 	closest_datetime = find_closest_date(desired_datetime, filefolder)
@@ -129,6 +115,69 @@ def find_desired_file(desired_datetime, desired_channel, filefolder):
 # and PV Output data
 ##################################################################
 
+# This works for both sensor and pvoutput data:
+
+def find_file_from_date(desired_date, filefolder, filetype = 'csv'):
+    '''Input: datetime, folder, filetype; Output: file
+    Usage: filefolder = "data/pvoutput/pvoutput6months/"
+	desired_date = datetime(2014, 5, 5) #year, month, day [, hour, minute, second]
+	find_file_from_date(desired_date, filefolder)'''
+    data_files = os.listdir(filefolder)
+
+    list_of_files = [] #contains all the files
+    list_of_files_details = [] #contains information collected from filename
+    for myfile in data_files:
+        if (myfile[-2:] == filetype or myfile[-3:] == filetype): #only get netCDF by default
+            list_of_files.append(myfile)
+            list_of_files_details.append(myfile.split('.'))
+
+    for i,val in enumerate(list_of_files_details):
+        try:   
+            if datetime.strptime(list_of_files_details[i][0], '%Y%m%d') == desired_date:
+                return list_of_files[i]
+        except:
+            pass
+
+def pad(x):
+    time = x.astype(str).zfill(4)
+    return time[:2] + ':' + time[2:]
+
+def return_sensor_data(filename, filefolder):
+    '''Input: desired file and folder
+    Output: sensor data pandas dataframe
+    Usage: filefolder = 'data/sensor_data/colorado6months/'
+    filename = '20140401.csv'
+    return_sensor_data(myfile, filefolder)'''
+    
+    df_header = pd.read_csv(filefolder + 'header.csv')
+    headers = df_header.columns
+    df_sensor = pd.read_csv(filefolder + filename,header=None) #sensors
+    df_sensor.columns = headers
+    df_sensor['MST'] = df_sensor['MST'].map(pad)
+    #make a datetime index:
+    df_sensor['datetime'] = pd.to_datetime(df_sensor['Year'].astype(str)+
+                                           df_sensor['DOY'].astype(str)+
+                                           df_sensor['MST'].astype(str), 
+                                           format='%Y%j%H:%M')
+    #convert to UTC time, website shows that they disregard daylight savings time
+    df_sensor['datetime'] = df_sensor['datetime'] + pd.Timedelta(hours=7) 
+    df_sensor.set_index(['datetime'],inplace=True) #set created column as index ...
+    df_sensor = df_sensor.resample('H')# ... so that we can resample it (hourly)
+    return df_sensor
+
+def return_pvoutput_data(filename, filefolder):
+    '''Input: Desired file and folder
+    Output: PV Output dataframe
+    Usage: filefolder = 'data/pvoutput/pvoutput6months/'
+    filename = '20140401.csv'
+    return_pvoutput_data(filename, filefolder)'''
+    df_output = pd.read_csv(filefolder + filename) #pvoutput
+    #df_output['datetime'] = df_output['datetime'] + pd.Timedelta(hours=6) #convert to utc time
+    df_output['datetime'] = df_output['datetime'].apply(pd.to_datetime)
+    df_output['datetime'] = df_output['datetime'] + pd.Timedelta(hours=6) #convert to utc time
+    df_output.set_index(['datetime'],inplace=True) #set created column as index ...
+    df_output = df_output.resample('H') # ...so that we can resample it (hourly)
+    return df_output[['Power']]
 
 
 
