@@ -87,7 +87,7 @@ def find_closest_date(desired_datetime, filefolder):
 	if min(time_differences) < 10800: #return datetime only if < 3 hours
 		return list_of_dates[np.argmin(time_differences)]
 	else:
-		print "No file with this datetime within 3 hours!"
+		print "No file with this datetime within 3 hours!"+" Desired datetime = "+desired_datetime
 
 def find_filename(desired_datetime, desired_channel, filefolder):
 	'''return filename with desired features
@@ -179,7 +179,7 @@ def return_pvoutput_data(filename, filefolder):
     df_output = df_output.resample('H') # ...so that we can resample it (hourly)
     return df_output[['Power']]
 
-
+################### Below are functions for querying the data to build models ##########
 def make_time(mytime, sunlight = 15, days = 182):
     '''Input: mytime (startime datetime) [,sunlight (hours), days]
     Output: a list of daylight times'''
