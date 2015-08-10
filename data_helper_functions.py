@@ -180,4 +180,15 @@ def return_pvoutput_data(filename, filefolder):
     return df_output[['Power']]
 
 
+def make_time(mytime, sunlight = 15, days = 182):
+    '''Input: mytime (startime datetime) [,sunlight (hours), days]
+    Output: a list of daylight times'''
+    times = []
+    for j in range(0,days): #days
+        for i in range(0,sunlight): #sunlight time
+            times.append(mytime)
+            mytime += timedelta(hours = 1)
+        mytime += timedelta(hours = (24-sunlight))    #night time, skip this
+    return times
+
 
