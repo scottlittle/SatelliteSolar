@@ -87,7 +87,7 @@ def find_closest_date(desired_datetime, filefolder):
 	if min(time_differences) < 10800: #return datetime only if < 3 hours
 		return list_of_dates[np.argmin(time_differences)]
 	else:
-		print "No file with this datetime within 3 hours!"+" Desired datetime = "+desired_datetime
+		print "No file with this datetime within 3 hours!"+" Desired datetime = "+ str(desired_datetime)
 
 def find_filename(desired_datetime, desired_channel, filefolder):
 	'''return filename with desired features
