@@ -191,4 +191,12 @@ def make_time(mytime, sunlight = 15, days = 182):
         mytime += timedelta(hours = (24-sunlight))    #night time, skip this
     return times
 
+def datetime_from_date(desired_datetime):
+    '''Input: datetime, Output: date in datetime format
+    Info: Subtracts 6 hours from datetime to make sure in correct folder'''
+    from datetime import datetime, timedelta, time
+    desired_date = (desired_datetime - timedelta(hours=6)).date() #make sure correct date
+    desired_date = datetime.combine(desired_date, time.min) #get into datetime format
+    return desired_date
+
 
