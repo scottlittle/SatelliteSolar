@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Just type HTML then hit tab</title>
+</head>
+<table border="1px solid black" style="width:300px">
+{% for px, year in data %}
+    <tr>
+        <td>{{ px }}</td>
+        <td>{{ year }}</td>
+    </tr>
+{% endfor %}
+
+</body>
+</html>

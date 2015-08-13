@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Just type HTML then hit tab</title>
+</head>
+<body>
+<table border="1px solid black" style="width:300px">
+{% for i in range(100) %}
+    <tr>
+        <td>{{ i }}</td>
+        <td>{{ i * 10 }}</td>
+    </tr>
+{% endfor %}
+
+</body>
+</html>

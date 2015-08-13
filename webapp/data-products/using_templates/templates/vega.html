@@ -1,0 +1,218 @@
+<html><head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Vega Demo</title>
+ <script
+      id="viz-script-d3"
+      type="text/javascript"
+      src="http://d3js.org/d3.v3.js">
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script
+      id="viz-script-vega"
+      type="text/javascript"
+      src="http://trifacta.github.io/vega/vega.js">
+    </script>
+    <script
+      id="viz-script-spec"
+      type="text/javascript">
+//<![CDATA[
+
+var viz_vega_spec = {
+  "width": 500.0,
+  "height": 200.0,
+  "padding": {
+    "top": 10.0,
+    "left": 30.0,
+    "bottom": 30.0,
+    "right": 10.0
+  },
+
+  "data": [
+    {
+      "name": "table",
+    },
+
+    {
+      "name": "stats",
+      "source": "table",
+      "transform": [
+        {
+          "keys": [
+            "data.x"
+          ],
+          "type": "facet"
+        },
+
+        {
+          "value": "data.y",
+          "type": "stats"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "ordinal",
+      "domain": {
+        "data": "table",
+        "field": "data.x"
+      },
+
+      "range": "width"
+    },
+
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "data": "stats",
+        "field": "sum"
+      },
+
+      "range": "height",
+      "nice": true
+    },
+
+    {
+      "name": "color",
+      "type": "ordinal",
+      "range": "category10"
+    }
+  ],
+  "axes": [
+    {
+      "type": "x",
+      "scale": "x"
+    },
+
+    {
+      "type": "y",
+      "scale": "y"
+    }
+  ],
+  "marks": [
+    {
+      "type": "group",
+      "from": {
+        "data": "table",
+        "transform": [
+          {
+            "keys": [
+              "data.c"
+            ],
+            "type": "facet"
+          },
+
+          {
+            "point": "data.x",
+            "height": "data.y",
+            "type": "stack"
+          }
+        ]
+      },
+
+      "marks": [
+        {
+          "properties": {
+            "enter": {
+              "x": {
+                "field": "data.x",
+                "scale": "x"
+              },
+
+              "width": {
+                "scale": "x",
+                "offset": -1.0,
+                "band": true
+              },
+
+              "y": {
+                "field": "y",
+                "scale": "y"
+              },
+
+              "y2": {
+                "field": "y2",
+                "scale": "y"
+              },
+
+              "fill": {
+                "field": "data.c",
+                "scale": "color"
+              }
+            },
+
+            "update": {
+              "fillOpacity": {
+                "value": 1.0
+              }
+            },
+
+            "hover": {
+              "fillOpacity": {
+                "value": 0.5
+              }
+            }
+          },
+
+          "type": "rect"
+        }
+      ]
+    }
+  ]
+};
+$.ajax({url:'get_data', 
+        success: function(resp) {viz_vega_spec.data[0]['values'] = resp}, 
+        dataType:"json",
+        async: false});
+
+
+//]]>
+</script>
+    <script
+      id="viz-script-render"
+      type="text/javascript">
+//<![CDATA[
+
+
+if (typeof viz_vega_spec.padding == 'undefined')
+  viz_vega_spec.padding = {};
+if (typeof viz_vega_spec.padding.top == 'undefined')
+  viz_vega_spec.padding.top = 0;
+if (typeof viz_vega_spec.padding.bottom == 'undefined')
+  viz_vega_spec.padding.bottom = 0;
+if (typeof viz_vega_spec.padding.left == 'undefined')
+  viz_vega_spec.padding.left = 0;
+if (typeof viz_vega_spec.padding.right == 'undefined')
+  viz_vega_spec.padding.right= 0;
+
+
+viz_render = function() {
+  viz_view.width(window.innerWidth-viz_vega_spec.padding.left-viz_vega_spec.padding.right).height(window.innerHeight-viz_vega_spec.padding.top - viz_vega_spec.padding.bottom).renderer('svg').update({props:'enter'}).update();
+}
+
+vg.parse.spec(viz_vega_spec, function(chart) {
+
+  self.viz_chart = chart;
+  self.viz_view = viz_chart({el:'#viz-visualization'});
+  viz_render();
+});
+
+window.onresize = viz_render;
+
+
+//]]>
+</script>
+<style
+      id="viz-styles"
+      type="text/css">
+    </style>
+  </head>
+  <body
+    style="padding:0; margin:0; overflow:hidden;">
+    <div
+      id="viz-visualization">
+    </div>
+  </body>
+</html>
