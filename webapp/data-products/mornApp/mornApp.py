@@ -59,4 +59,4 @@ def word_counter():
         return render_template('template2.html', doc=doc, category=categories[category])
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8087, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
