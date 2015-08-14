@@ -66,50 +66,31 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  
- <form action="/word_counter" method='POST' >
- 	<div class="form-group" align='center'>
- 		<br><br>
-    <h3>
- 		<label>Solar energy expectation:</label></h3><br>
-         <input size=50px type="text" name="user_input" />  <!-- user_input is python variable -->
-        <input type="submit" class="btn btn-primary"/>
-     </form>
-
- <div class="container">
-  <div class="dropdown pull-left">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu pull-left">
-
-      <li><a href="about">About Page</a></li>
-      <li><a href="#">CSS</a></li>
-      <li><a href="#">JavaScript</a></li>
-    </ul>
-  </div>
-
-  </div>
 
 
 
+<form action="/word_counter" method='POST' align='center'>    
+  <h3>Solar Panel Type</h3>
+  <select name='panel_type'>
+      <option value='Sanyo'>Sanyo</option>
+      <option value='SunPower'>SunPower</option>
+      <option value='Solyndra'>Solyndra</option>          
+  </select>
 
+      <h3>Number of Solar Panels</h3>
+  <select name='number_panels'>
+      <option value='1'>1</option>
+      <option value='5'>2</option>
+      <option value='10'>10</option>
+      <option value='20'>20</option>
+      <option value='50'>50</option>
+      <option value='100'>100</option>
 
+         
+  </select>
 
-
-
-
-
-
-
-
-
-</body>
-</html>
-
-
-
-
-
+<input type='submit' class='btn btn-primary'>
+ </form>
 
 
 
