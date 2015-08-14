@@ -8,7 +8,7 @@ import os
 import glob
 import requests
 
-mypath = "data/satellite/colorado/summer6months/"
+mypath = "data/satellite/sfarea/" #"data/satellite/colorado/summer6months/"
 
 http_files = filter(os.path.isfile, glob.glob(mypath + "*")) #local http files
 http_files.sort(key=lambda x: os.path.getmtime(x)) #sorts by time
