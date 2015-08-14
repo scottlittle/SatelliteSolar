@@ -12,6 +12,9 @@
 
 
 <link rel="stylesheet" href="{{ url_for('static', filename = 'bootstrap-3.3.5-dist/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename = 'bootstrap-3.3.5-dist/css/bootstrap-theme.min.css') }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{ url_for('static', filename = 'bootstrap-3.3.5-dist/js/bootstrap.min.js') }}"></script>
 
   <style type="text/css"></style></head>
 
@@ -56,9 +59,14 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
  <div align='center'> <br><br>
- 	<h3>
+ 	<h2><label>The predicted power is: <font color='green'>{{predicted_power}} Watts </font> </label></h2> 
+  <h3>
 	<label>The panel you choose is: <font color='blue'> {{panel_type_data}} </font></label> <br> <br>
-	<label>The number of panels is: <font color='green'> {{number_panels_data}} </font></label>
+	<label>The number of panels is: <font color='green'> {{number_panels_data}} </font></label> <br> <br>
+  <label>Month: <font color='green'> {{month_data}} </font></label> <br> <br>
+  <label>Hour: <font color='green'> {{hour_data}} </font></label> <br> <br>
+  
+
 </h3>
 </div>
 </body></html>

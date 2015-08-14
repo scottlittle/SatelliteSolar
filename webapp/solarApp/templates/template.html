@@ -16,14 +16,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="{{ url_for('static', filename = 'bootstrap-3.3.5-dist/js/bootstrap.min.js') }}"></script>
 
-<!-- begin paste -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
-<!-- end paste -->
-
-
   <style type="text/css"></style></head>
 
   <body>
@@ -70,29 +62,106 @@
 
 
 <form action="/word_counter" method='POST' align='center'>    
-  <h3>Solar Panel Type</h3>
+  <h4>Solar Panel Type</h4>
   <select name='panel_type'>
       <option value='Sanyo'>Sanyo</option>
       <option value='SunPower'>SunPower</option>
       <option value='Solyndra'>Solyndra</option>          
   </select>
 
-      <h3>Number of Solar Panels</h3>
+  <h4>Number of Solar Panels</h4>
   <select name='number_panels'>
       <option value='1'>1</option>
       <option value='5'>2</option>
       <option value='10'>10</option>
       <option value='20'>20</option>
       <option value='50'>50</option>
-      <option value='100'>100</option>
-
-         
+      <option value='100'>100</option> 
   </select>
 
+  <h4>Month</h4>
+  <select name='month'>
+      <option value='4'>April</option>
+      <option value='5'>May</option>
+      <option value='6'>June</option> 
+      <option value='7'>July</option> 
+      <option value='8'>August</option> 
+      <option value='9'>September</option> 
+  </select>
+
+  <h4>Day</h4>
+  <select name='day'>
+      <option value='0'>0</option>
+      <option value='1'>1</option>
+      <option value='2'>2</option>
+      <option value='3'>3</option>
+      <option value='4'>4</option>
+      <option value='5'>5</option>
+      <option value='6'>6</option> 
+      <option value='7'>7</option> 
+      <option value='8'>8</option> 
+      <option value='9'>9</option> 
+      <option value='10'>10</option> 
+      <option value='11'>11</option>
+      <option value='12'>12</option>  
+      <option value='13'>13</option>
+      <option value='14'>14</option>
+      <option value='15'>15</option>
+      <option value='16'>16</option>
+      <option value='17'>17</option>
+      <option value='18'>18</option> 
+      <option value='19'>19</option> 
+      <option value='20'>20</option> 
+      <option value='21'>21</option> 
+      <option value='22'>22</option> 
+      <option value='23'>23</option>
+      <option value='24'>24</option> 
+      <option value='25'>25</option> 
+      <option value='26'>26</option> 
+      <option value='27'>27</option> 
+      <option value='28'>28</option> 
+      <option value='29'>29</option>
+      <option value='30'>30</option>
+      <option value='31'>31</option>
+  </select>
+
+  <h4>Hour (UTC time)</h4>
+  <select name='hour'>
+      <option value='0'>0</option>
+      <option value='1'>1</option>
+      <option value='2'>2</option>
+      <option value='3'>3</option>
+      <option value='4'>4</option>
+      <option value='5'>5</option>
+      <option value='6'>6</option> 
+      <option value='7'>7</option> 
+      <option value='8'>8</option> 
+      <option value='9'>9</option> 
+      <option value='10'>10</option> 
+      <option value='11'>11</option>
+      <option value='12'>12</option>  
+      <option value='13'>13</option>
+      <option value='14'>14</option>
+      <option value='15'>15</option>
+      <option value='16'>16</option>
+      <option value='17'>17</option>
+      <option value='18'>18</option> 
+      <option value='19'>19</option> 
+      <option value='20'>20</option> 
+      <option value='21'>21</option> 
+      <option value='22'>22</option> 
+      <option value='23'>23</option>
+  </select>
+
+   <h4>Location (Future)</h4>
+  <select name='location'>
+      <option value='denver'>Denver, Colorado</option>
+
+  </select>
+
+<br><br>
 <input type='submit' class='btn btn-primary'>
  </form>
-
-
 
 
 </body></html>
