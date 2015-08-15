@@ -43,9 +43,25 @@
 
     <div class="container">
 <br><br>
-      <div class="starter-template" align='center'><br><br>
+      <div class="starter-template" align='center'><br>
         <h1>SolarSat App</h1>
-        <!-- <p class="lead">{{content}}</p> -->
+
+
+<!--   <div align='center'> <br><br> -->
+  <img src= "{{ url_for('static', filename = 'images/foo.png') }}" style="width:400px;height:170px;" />
+ 	<h2><label>The predicted power is: <font color='green'>{{predicted_power}} Watts </font> </label></h2> 
+  <h3>
+	<label>The panel you choose is: <font color='blue'> {{panel_type_data}} </font></label> <br> 
+	<label>The number of panels is: <font color='green'> {{number_panels_data}} </font></label> <br> 
+  <label>Month: <font color='green'> {{month_data}} </font></label> <br> 
+  <label>Hour: <font color='green'> {{day_data}} </font></label> <br> 
+  <label>Hour: <font color='green'> {{hour_data}} </font></label> <br> 
+  
+
+</h3>
+
+<!-- </div> -->
+      
       </div>
 
     </div><!-- /.container -->
@@ -55,22 +71,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
- <div align='center'> <br><br>
-  <img src= "{{ url_for('static', filename = 'images/foo.png') }}" style="width:500px;height:228px;" />
- 	<h2><label>The predicted power is: <font color='green'>{{predicted_power}} Watts </font> </label></h2> 
-  <h3>
-	<label>The panel you choose is: <font color='blue'> {{panel_type_data}} </font></label> <br> 
-	<label>The number of panels is: <font color='green'> {{number_panels_data}} </font></label> <br> 
-  <label>Month: <font color='green'> {{month_data}} </font></label> <br> 
-  <label>Hour: <font color='green'> {{day_data}} </font></label> <br> 
-  <label>Hour: <font color='green'> {{hour_data}} </font></label> <br> 
-  
-</h3>
-
-
-
-</div>
 
 
 </body></html>
