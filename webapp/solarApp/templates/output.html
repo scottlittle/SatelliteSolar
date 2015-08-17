@@ -47,8 +47,20 @@
         <h1>SolarSat App</h1>
 
 
-<!--   <div align='center'> <br><br> -->
-  <img src= "{{ url_for('static', filename = 'images/foo.png') }}" style="width:400px;height:170px;" />
+<!--  "Sleep" -->
+
+<script>
+var myVar=setInterval(function(){myTimer()},5000);
+
+function myTimer() {
+    var d = new Date();
+
+}
+</script>
+
+
+  <img src= "{{ url_for('static', filename = 'images/foo.png') }}" style= "width:400px;height:170px;" />
+
  	<h2><label>The predicted power is: <font color='green'>{{predicted_power}} Watts </font> </label></h2> 
   <h3>
 	<label>The panel you choose is: <font color='blue'> {{panel_type_data}} </font></label> <br> 
