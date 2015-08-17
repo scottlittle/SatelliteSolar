@@ -1,4 +1,4 @@
-#Virtual Solar Sensors
+#Satellite Solar
 Galvanize capstone project for predicting solar energy usage from sensors and satellite data
 
 ##Background and Motivation
