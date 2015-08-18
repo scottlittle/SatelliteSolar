@@ -14,3 +14,6 @@ By using machine learning algorithms (extra trees random forest regressor) on th
 
 ##Web Interface
 The web interface allows for a user to adjust the date and time and see the amount of solar energy produced for the number of solar panels selected.  Future implementations would also include pricing information such as selecting solar panels from different solar cell companies and comparing the cost and energy savings.
+
+##Presentation
+[Here's a snapshot of the presentation.](https://github.com/scottlittle/SatelliteSolar/blob/master/documentation/Satellite%20Solar%20-%20Galvanize%20Capstone.pdf)
