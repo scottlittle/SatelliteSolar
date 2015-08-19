@@ -8,7 +8,7 @@ from datetime import datetime, timedelta, time
 from data_helper_functions_webapp import *
 from time import sleep
 
-def return_power(month_data, day_data, hour_data):
+def return_power(month_data, day_data, hour_data, sat_to_sensor_model, sensor_to_power_mod):
     '''Input: datetime
     Output: power
     Info: also makes satellite image'''
@@ -111,11 +111,11 @@ def return_power(month_data, day_data, hour_data):
 
     X_hist = np.array(X_hist)
 
-    #################### Import models #######################
+    #################### #Import models  (run models) #######################
 
-    from sklearn.externals import joblib #joblib is sklearn's pickle
-    sat_to_sensor_model = joblib.load('models/sat-to-sensor-model/sat-to-sensor-model.pkl')
-    sensor_to_power_mod = joblib.load('models/sensor-to-power-model/sensor-to-power-model.pkl')
+    # from sklearn.externals import joblib #joblib is sklearn's pickle
+    # sat_to_sensor_model = joblib.load('models/sat-to-sensor-model/sat-to-sensor-model.pkl')
+    # sensor_to_power_mod = joblib.load('models/sensor-to-power-model/sensor-to-power-model.pkl')
 
     X_sensor = sat_to_sensor_model.predict(X_hist)
     y_power = sensor_to_power_mod.predict(X_sensor)
